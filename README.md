@@ -148,6 +148,6 @@ Here you can find out more about `MPICH`: [https://www.mpich.org/](https://www.m
     |   |-- page-rank.cpp
 
 ## Resources
--[Parallelization with MPI and OpenMPI](http://compphysics.github.io/ComputationalPhysics2/doc/LectureNotes/_build/html/parallelization.html#)
+- [Parallelization with MPI and OpenMPI](http://compphysics.github.io/ComputationalPhysics2/doc/LectureNotes/_build/html/parallelization.html#)
 
 
