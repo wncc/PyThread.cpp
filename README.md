@@ -101,48 +101,7 @@ Here you can find out more about `MPICH`: [https://www.mpich.org/](https://www.m
     |   |-- sum_task.cpp
     |   |-- vvd.cpp (Vector-Vector Dot product)
     |   |-- wrong_sum.cpp (Demo of a wrong summation example for learning purposes)
-> **Advanced**
-    **main**
-    .
-    |-- include
-    |   |-- array_concat.h
-    |   |-- dot_product.h
-    |   |-- find_max.h
-    |   |-- lu_decomposition.h
-    |   |-- matrix_mult.h
-    |   |-- matrix_vector.h
-    |   |-- montecarlo.h
-    |   |-- parallel_sum.h
-    |   |-- pi_calculator.h
-    |   |-- product_log.h
-    |   |-- statistics.h
-    |   |-- sum2.h
-    |   |-- sum_task.h
-    |
-    |-- src
-    |   |-- Histogram/
-    |   |   |-- histo.cpp
-    |   |   |-- data.txt
-    |   |-- Contributing.md
-    |   |-- LU_factorisation.cpp
-    |   |-- README.md
-    |   |-- algoimage.png
-    |   |-- broadcast.cpp
-    |   |-- concatenate.cpp
-    |   |-- input.txt(for max.cpp)
-    |   |-- max.cpp
-    |   |-- mm.cpp  (Matrix Multiplication implementation)
-    |   |-- montecarlo.cpp
-    |   |-- mv.cpp (Matrix Vector multiplication)
-    |   |-- pi-reduction.cpp (Parallel pi computation using OpenMP reduction)
-    |   |-- prod.cpp (Parallel product computation)
-    |   |-- standard_dev.cpp
-    |   |-- sum2.cpp
-    |   |-- sum_task.cpp
-    |   |-- vvd.cpp (Vector-Vector Dot product)
-    |   |-- wrong_sum.cpp (Demo of a wrong summation example for learning purposes)
-    |-- Application
-    |   |-- page-rank.cpp
+  
 
 ## Resources
 -[Parallelization with MPI and OpenMPI](http://compphysics.github.io/ComputationalPhysics2/doc/LectureNotes/_build/html/parallelization.html#)
