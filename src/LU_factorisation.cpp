@@ -1,18 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#include <stdbool.h>
+// lu_decomposition.cpp
+#include "lu_decomposition.h"
 #include <omp.h>
 #include <iostream>
-#include <ostream>
-
+#include <cstdio>
+#include <cstdlib>
+using namespace std;
+// LU Decomposition function
 void l_u_d(float** a, float** l, float** u, int size)
 {
     // Initialize a simple lock for parallel region
     omp_lock_t lock;
     omp_init_lock(&lock);
 
-    // Initialize l and u matrices
+    // Initialize L and U matrices
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
             if (i == j) {
@@ -28,7 +28,7 @@ void l_u_d(float** a, float** l, float** u, int size)
         }
     }
 
-    // Make the for loops of LU decomposition parallel
+    // Parallelize the LU decomposition
     #pragma omp parallel shared(a, l, u)
     {
         for (int k = 0; k < size; k++) {
@@ -59,7 +59,6 @@ void l_u_d(float** a, float** l, float** u, int size)
 
     omp_destroy_lock(&lock);
 }
-
 int main(int argc, char *argv[]) {
     int size = 2;
     float **a, **l, **u;
@@ -84,19 +83,27 @@ int main(int argc, char *argv[]) {
             a[i][j] = temp[i][j];
         }
     }
-    l_u_d(a,l,u,size);
-    for(int i=0;i<size;i++){
-        for(int j=0;j<size;j++){
-            printf("%f ",l[i][j]);
+
+    // Perform LU decomposition
+    l_u_d(a, l, u, size);
+
+    // Print L matrix
+    printf("L Matrix:\n");
+    for(int i = 0; i < size; i++) {
+        for(int j = 0; j < size; j++) {
+            printf("%f ", l[i][j]);
         }
         printf("\n");
     }
-    printf("\n");
-    for(int i=0;i<size;i++){
-        for(int j=0;j<size;j++){
-            printf("%f ",u[i][j]);
+
+    // Print U matrix
+    printf("U Matrix:\n");
+    for(int i = 0; i < size; i++) {
+        for(int j = 0; j < size; j++) {
+            printf("%f ", u[i][j]);
         }
         printf("\n");
     }
+
     return 0;
 }

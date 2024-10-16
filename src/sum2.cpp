@@ -1,35 +1,56 @@
-#include<omp.h>
-#include<stdio.h>
+#include "parallel_sum.h"
 
-int a[int(1e7)],sum=0;
-#define ARR_SIZE 10000000
-int main(int argc,char *argv[])
-{
-    int i,tid,numt,sum=0;
-    double t1,t2;
-    for(int i=0;i<ARR_SIZE;i++)
-    {
-        a[i]=1;
+// Global array definition
+int a[ARR_SIZE];
+
+// Function to initialize the array
+void initialize_array() {
+    for (int i = 0; i < ARR_SIZE; i++) {
+        a[i] = 1;  // Fill the array with 1s
     }
-    t1=omp_get_wtime();
-    #pragma omp parrallel default(shared) private(i,tid)
+}
+
+// Function to compute the sum in parallel using OpenMP
+int compute_parallel_sum() {
+    int sum = 0;
+    int numt, tid;
+
+    // Start measuring time
+    double t1 = omp_get_wtime();
+
+    #pragma omp parallel default(shared) private(tid)
     {
-        int from ,to, psum=0;
-        tid=omp_get_thread_num();
-        numt=omp_get_num_threads();
-        from=(ARR_SIZE/numt)*tid;
-        to=(ARR_SIZE/numt)*(tid+1)-1;
-        for(int i=from;i<=to;i++)
-        {
-            psum+=a[i];
+        int from, to, psum = 0;
+        tid = omp_get_thread_num();
+        numt = omp_get_num_threads();
+        from = (ARR_SIZE / numt) * tid;
+        to = (ARR_SIZE / numt) * (tid + 1) - 1;
+
+        for (int i = from; i <= to; i++) {
+            psum += a[i];
         }
+
         #pragma omp critical
         {
-            sum+=psum;
+            sum += psum;
         }
     }
-    printf("Sum=%d\n",sum);
-    t2=omp_get_wtime();
-    printf("Time taken=%f\n",t2-t1);
+
+    double t2 = omp_get_wtime();  // End time
+
+    printf("Time taken = %f seconds\n", t2 - t1);
+    return sum;
+}
+
+// Main function
+int main(int argc, char *argv[]) {
+    // Initialize array
+    initialize_array();
+
+    // Compute sum
+    int sum = compute_parallel_sum();
+
+    // Print the result
+    printf("Sum = %d\n", sum);
     return 0;
 }
