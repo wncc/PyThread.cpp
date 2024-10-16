@@ -2,9 +2,9 @@
 Parallel programming is often used interchangeably with parallel processing or in connection with parallel computing, which refers to systems that enhance the efficiency of parallel execution. In parallel programming, tasks are divided and executed simultaneously across multiple computers or multiple CPU cores. This approach is essential for large-scale projects where speed and precision are crucial. Although complex, parallel programming enables developers, researchers, and users to perform research and analysis much faster than programs limited to processing tasks sequentially
 
 ## Project Description
-This project demonstrates the use of parallel programming techniques in C++ with OpenMP to efficiently execute computations across multiple threads. It includes examples of parallel loops, task scheduling, and thread synchronization. The goal is to showcase performance improvements in computational tasks using OpenMP directives.
+This project demonstrates the use of parallel programming techniques in C++ with (`OpenMP`) and (`MPI) to efficiently execute computations across multiple threads. It includes examples of parallel loops, task scheduling, and thread synchronization. The goal is to showcase performance improvements in computational tasks using OpenMP and MPI directives.
 
-## **1. OpenMP** <a id="openmp"></a>
+## **1. OpenMP (Open Multi-Processing)** <a id="openmp"></a>
 
 `OpenMP` is a multi-platform programming interface that enables multiprocessing programming. `OpenMP` can be used in C++, C and Fortran languages, including different architectures like Windows and Unix. It consists of compilator directives that have an impact on code execution.
 
