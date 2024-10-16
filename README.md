@@ -24,7 +24,7 @@ Then install the `build-essential` package, including `gcc`, `g++` and `make`:
 >>> sudo apt-get install build-essential
 ```
 
-## **3. MPI** <a id="mpi"></a>
+## **2. MPI** <a id="mpi"></a>
 
 Message Passing Interface (`MPI`) is a communication protocol standard for transferring messages between parallel program processes on one or more computers. `MPI` is currently the most widely used communication model in clusters of computers and supercomputers.
 
@@ -149,5 +149,5 @@ Here you can find out more about `MPICH`: [https://www.mpich.org/](https://www.m
 
 ## Resources
 - [Parallelization with MPI and OpenMPI](http://compphysics.github.io/ComputationalPhysics2/doc/LectureNotes/_build/html/parallelization.html#)
-
+- [OpenMP](https://medium.com/swlh/openmp-on-ubuntu-1145355eeb2)
 
