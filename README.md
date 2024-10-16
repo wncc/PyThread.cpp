@@ -87,7 +87,7 @@ Here you can find out more about `MPICH`: [https://www.mpich.org/](https://www.m
     |   |   |-- data.txt
     |   |-- Contributing.md
     |   |-- LU_factorisation.cpp
-    |   |-- [README.md](src/README.md)
+    |   |-- README.md
     |   |-- algoimage.png
     |   |-- broadcast.cpp
     |   |-- concatenate.cpp
@@ -146,7 +146,8 @@ Here you can find out more about `MPICH`: [https://www.mpich.org/](https://www.m
     |   |-- wrong_sum.cpp (Demo of a wrong summation example for learning purposes)
     |-- Application
     |   |-- page-rank.cpp
-
+### mote
+> Information about Functions in main is provided in [READMA.md](src/README.md)
 ## Resources
 - [Parallelization with MPI and OpenMPI](http://compphysics.github.io/ComputationalPhysics2/doc/LectureNotes/_build/html/parallelization.html#)
 - [OpenMP](https://medium.com/swlh/openmp-on-ubuntu-1145355eeb2)
