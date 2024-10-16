@@ -87,7 +87,7 @@ Here you can find out more about `MPICH`: [https://www.mpich.org/](https://www.m
     |   |   |-- data.txt
     |   |-- Contributing.md
     |   |-- LU_factorisation.cpp
-    |   |-- README.md
+    |   |-- [README.md](src/README.md)
     |   |-- algoimage.png
     |   |-- broadcast.cpp
     |   |-- concatenate.cpp
