@@ -24,6 +24,40 @@ Then install the `build-essential` package, including `gcc`, `g++` and `make`:
 >>> sudo apt-get install build-essential
 ```
 
+## **3. MPI** <a id="mpi"></a>
+
+Message Passing Interface (`MPI`) is a communication protocol standard for transferring messages between parallel program processes on one or more computers. `MPI` is currently the most widely used communication model in clusters of computers and supercomputers.
+
+There are several implementations of `MPI`, including `OpenMPI`, `MPICH` and `MSMPI`. On Linux, we can choose from `OpenMPI` and `MPICH`, while `MSMPI` is a Windows implementation. Before going any further, we should ensure that we have the `GCC` compiler installed.
+
+**INSTALLATION AND CONFIGURATION OF `MPICH` ON LINUX SYSTEMS:**
+
+Start the terminal and update the repository:
+
+```bash
+>>> sudo apt-get update
+```
+
+We then install the `mpich` package:
+
+```bash
+>>> sudo apt-get install mpich
+```
+
+We can now check the version of the installed `MPI` (this will actually be the `GCC` version):
+
+```bash
+>>> mpic++ --version
+```
+
+Here you can find out more about `MPICH`: [https://www.mpich.org/](https://www.mpich.org/).
+
+**THE INSTALLATION PROCESS UNDER WINDOWS IS COMPLEX, AND I DO NOT RECOMMEND USING MPI WITH THE WINDOWS PLATFORM..., BUT IF YOU WANT TO HAVE FUN YOU HAVE TO CHOOSE `MSMPI`.**
+
+More about `MSMPI`: [https://learn.microsoft.com/en-us/message-passing-interface/microsoft-mpi](https://learn.microsoft.com/en-us/message-passing-interface/microsoft-mpi).
+
+We can use the `MPI` protocol to communicate between machines via the local network. In this way, you can run a program that will be executed in parallel by the available allocated threads on more than one machine. To carry out such a task, we need a minimum of two machines connected via the local network. The machines will communicate via the `SSH` protocol and exchange data via the `NFS` protocol. Step-by-step instructions on how this can be implemented on Linux systems is available at: [https://mpitutorial.com/tutorials/running-an-mpi-cluster-within-a-lan/.](https://mpitutorial.com/tutorials/running-an-mpi-cluster-within-a-lan/.)
+
 We can also install the manual pages on using GNU/Linux for programming, but it is not necessary:
 
 ```bash
