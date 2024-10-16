@@ -1,9 +1,4 @@
-# Parallel_Programming
-
-## Project Description
-This project demonstrates the use of parallel programming techniques in C++ with OpenMP to efficiently execute computations across multiple threads. It includes examples of parallel loops, task scheduling, and thread synchronization. The goal is to showcase performance improvements in computational tasks using OpenMP directives.
-
-## 0.1) Functions Implenented
+## Functions Implenented
 A list of functions that have been implemented can be found here :-
 
 ### 1) LU Factoristion
