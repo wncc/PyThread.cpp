@@ -22,7 +22,7 @@ If you would like to contribute to the project, please follow these guidelines:
 
 ```shell
   # Clone your fork of the GitHub Repo
-  git clone https://github.com/your_username/SoC-Portal.git
+  git clone https://github.com/your_username/Hello-Foss-CPP.git
 ```
 > Follow the installation and compilation steps provided in Introduction page and [README.md](README.md). <br>
 
