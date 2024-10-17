@@ -3,19 +3,32 @@
 Please note that this project is released with a **HELLO-FOSS**.<br>
 By participating in this project you agree to abide by its terms.
 
-Ensure your pull request adheres to the following guidelines:
+If you would like to contribute to the project, please follow these guidelines:
 
-- Before submitting, please ensure that similar suggestions haven't already been made by searching through previous contributions.
-- Open source applications submitted must include an English-language README.md, a screenshot of the app in the README, and provide binaries for at least one operating system, ideally covering macOS, Linux, and Windows.- Submitted packages should be tested and documented.
-- Make an individual pull request for each suggestion.
-- Any submitted packages must be properly tested and come with clear documentation.
-- New categories, or improvements to the existing categorization are welcome.
-- Keep descriptions short and simple, but descriptive.
-- Start the description with a capital and end with a full stop/period.
-- Check your spelling and grammar.
-- Make sure your text editor is set to remove trailing whitespace.
-- The pull request should have a useful title and include a link to the package and why it should be included.
+1. Fork the original WnCC repository to your personal account.
 
+2. Clone the forked repository locally.
+
+3. Create a new branch for your feature or bug fix.
+
+4. Make the necessary changes and commit them.
+
+5. Push your changes to your forked repository.
+
+6. Submit a pull request to the main repository with your branch, explaining the changes you made and any additional information that might be helpful for review.
+
+# Usage 
+> Clone the Git repository:
+
+```shell
+  # Clone your fork of the GitHub Repo
+  git clone https://github.com/your_username/SoC-Portal.git
+```
+<br>
+> Follow the installation and compilation steps provided in [README.md](README.md)<br>
 By following these guidelines, you help maintain the quality and organization of the project!<br>
-                                    
+          
+## Resources
+- [Parallelization with MPI and OpenMPI](http://compphysics.github.io/ComputationalPhysics2/doc/LectureNotes/_build/html/parallelization.html#)
+- [OpenMP](https://medium.com/swlh/openmp-on-ubuntu-1145355eeb2)<br>
 ***HAPPY LEARNING 😀😀😀***
