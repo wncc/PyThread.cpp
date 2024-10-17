@@ -24,7 +24,7 @@ If you would like to contribute to the project, please follow these guidelines:
   # Clone your fork of the GitHub Repo
   git clone https://github.com/your_username/SoC-Portal.git
 ```
-> Follow the installation and compilation steps provided in [Intro.md](Intro.md)<br>
+> Follow the installation and compilation steps provided in [Intro.md](Hello-Foss-CPP/Intro.md)<br>
 
 By following these guidelines, you help maintain the quality and organization of the project!<br>
           
