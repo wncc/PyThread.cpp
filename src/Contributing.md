@@ -24,7 +24,6 @@ If you would like to contribute to the project, please follow these guidelines:
   # Clone your fork of the GitHub Repo
   git clone https://github.com/your_username/SoC-Portal.git
 ```
-<br>
 > Follow the installation and compilation steps provided in [README.md](README.md)<br>
 By following these guidelines, you help maintain the quality and organization of the project!<br>
           
