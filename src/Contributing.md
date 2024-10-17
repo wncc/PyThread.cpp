@@ -24,11 +24,12 @@ If you would like to contribute to the project, please follow these guidelines:
   # Clone your fork of the GitHub Repo
   git clone https://github.com/your_username/SoC-Portal.git
 ```
-> Follow the installation and compilation steps provided in [README.md](README.md) and [Intro](./README.md) <br>
+> Follow the installation and compilation steps provided in Introduction page and [README.md](README.md). <br>
 
 By following these guidelines, you help maintain the quality and organization of the project!<br>
           
 ## Resources
 - [Parallelization with MPI and OpenMPI](http://compphysics.github.io/ComputationalPhysics2/doc/LectureNotes/_build/html/parallelization.html#)
 - [OpenMP](https://medium.com/swlh/openmp-on-ubuntu-1145355eeb2)<br>
+
 ***HAPPY LEARNING 😀😀😀***
