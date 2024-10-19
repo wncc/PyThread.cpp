@@ -20,7 +20,6 @@ int parallel_sum(const int arr[], int size, int step_size) {
             #pragma omp task
             {
                 int psum = 0;
-                // int psum = arr[i];
                 std::cout << "Task computing Sum(" << start << "," << end << ") from "
                           << omp_get_thread_num() << " of " << omp_get_num_threads() << std::endl;
                 
