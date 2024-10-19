@@ -25,9 +25,10 @@ double compute_log_sum(int* a, int size, int num_threads) {
 // Function to find number of negative numbers in parallel
 pair<int, int> count_negative_and_zero(int* a, int size, int num_threads) {
     int negative_count = 0, zero_count = 0;
+    int i;
 
-    #pragma omp parallel for private(negative_count, zero_count) reduction(+:negative_count, zero_count) num_threads(num_threads)
-    for (int i = 0; i < size; i++) {
+    #pragma omp parallel for private(i) reduction(+:negative_count, zero_count) num_threads(num_threads)
+    for (i = 0; i < size; i++) {
         if(a[i] < 0 )negative_count++;
         else if(a[i] == 0)zero_count++;
     }
